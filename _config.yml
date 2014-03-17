@@ -1,3 +1,47 @@
-name: Toby Jackson
-markdown: redcarpet
-pygments: true
+title:            Warmfusion.co.uk
+description:      Toby's blog of things
+logo:             site-logo.png
+disqus_shortname: warmfusion
+search:           true
+# Your site's domain goes here. When working locally use localhost server leave blank
+# PS. If you set this wrong stylesheets and scripts won't load and most links will break.
+# PPS. If you leave it blank for local testing home links won't work, they'll be fine for live domains though.
+url:              http://www.warmfusion.co.uk
+
+# Owner/author information
+owner:
+  name:           Toby Jackson
+  avatar:         warmfusion.png
+  email:          toby.jackson@warmfusion.co.uk
+  # Social networking links used in footer. Update and remove as you like.
+  twitter:        warmfusion
+  facebook:       
+  github:         warmfusion
+  linkedin:       toby-jackson/14/2a1/b7
+  instagram:
+  tumblr:
+  stackexchange:  536604/toby-jackson
+  # For Google Authorship https://plus.google.com/authorship
+  google_plus:    
+
+# Analytics and webmaster tools stuff goes here
+google_analytics:
+google_verify:
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# Links to include in top navigation
+# For external links add external: true
+links:
+  - title: About
+    url: /about/
+  - title: Articles
+    url: /articles/
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    Europe/London
+pygments:    true
+markdown:    kramdown
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title/

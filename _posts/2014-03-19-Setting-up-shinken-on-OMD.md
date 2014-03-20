@@ -5,7 +5,13 @@ categories: monitoring shinken nagios
 ---
 
 # Whats Shinken
-http://www.shinken-monitoring.org/
+
+The home page for [Shinken](http://www.shinken-monitoring.org/) has the breakdown on what Shinken is, but as a summary, its a drop in replacement for the Nagios core 
+engine re-written to be 100% compatible with your existing checks, monitors plugins etc using Python as its base. It provides a new WebUI for displaying service issues
+and supports greater scalability and service monitoring.
+
+I'm very much a beginner, having only thus far installed and setup monitoring on a few hosts, but I hope to be able to integrate Shinken with Graphite, as well as
+some of my custom information radiators setup in the office.
 
 # How do I get it?
 
@@ -91,7 +97,7 @@ Add some configuration to mongodb to shinkens module_webui.cfg - Lines 13 , 22-2
 
 ## Bring The Graphite
 
-http://www.shinken-monitoring.org/wiki/use_with_graphite
+[use_with_graphite](http://www.shinken-monitoring.org/wiki/use_with_graphite)
 
 ## Reap the rewards
 
@@ -104,6 +110,6 @@ http://www.shinken-monitoring.org/wiki/use_with_graphite
 
 Alot of googling around was needed to bring these pieces together, here are the main sources of my "knowledge"
 
-* Quick start installation/configuration of Shinken - https://labs.consol.de/blog/nagios/how-to-install-bleeding-edge-shinken-in-a-minute-with-omd/
-* Logging into Shinken (Contact.cfg) - http://www.monitoring-portal.org/wbb/index.php?page=Thread&postID=163198#post163198
-* MongoDB Configuration example taken from - http://www.shinken-monitoring.org/forum/index.php?topic=605.0
+* Quick start installation/configuration of Shinken - [how to install bleeding edge shinken in a minute with omd](https://labs.consol.de/blog/nagios/how-to-install-bleeding-edge-shinken-in-a-minute-with-omd/)
+* Logging into Shinken (Contact.cfg) - [Adding contacts to Shinken](http://www.monitoring-portal.org/wbb/index.php?page=Thread&postID=163198#post163198)
+* MongoDB Configuration example taken from - [MongoDB in Shinken](http://www.shinken-monitoring.org/forum/index.php?topic=605.0)

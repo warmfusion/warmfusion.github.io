@@ -2,6 +2,8 @@
 layout: post
 title:  "Setting up Shinken on OMD"
 categories: monitoring shinken nagios
+share: true
+comments: true
 ---
 
 # Whats Shinken

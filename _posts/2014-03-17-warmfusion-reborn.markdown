@@ -3,6 +3,8 @@ layout: post
 title:  "Warmfusion Reborn"
 date:   2014-03-17 20:48:00
 categories: 
+share: true
+comments: true
 ---
 
 After a long stay of absence, I've decided to try and revive my blogging by using something a bit more portable,

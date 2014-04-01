@@ -4,6 +4,9 @@ title:  "Bringing the dashboards"
 categories: dashboard hackathon retrospective
 share: true
 comments: true
+image:
+  feature: dashboard-Nexus5.png
+  credit: Toby Jackson 
 ---
 One of my passions is to support the people around me to achieve the best they can. Be that by simply providing a listening post to help answer questions in the form of [Rubber Ducking](http://en.wikipedia.org/wiki/Rubber_duck_debugging), supporting tools that help developers build and validate code, through to providing "inspiration" for new ways of working.
 

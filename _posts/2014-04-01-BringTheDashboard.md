@@ -15,8 +15,7 @@ I've always been very interested in presenting information to users in innovativ
 We ran the hackathon in early January as a relaxing way to get back into things after a long break over the new year, but after four months I thought it'd be interesting to write up a few of the lessons
 I learnt during this time.
 
-![Dashboard](http://static.ow.ly/photos/thumb/4dJx5.jpg) 
-
+![Dashboard](http://static.ow.ly/photos/normal/4dJx5.jpg) 
 
 ## Gather Yourself
 
@@ -57,7 +56,7 @@ Frankly, nothing. Its incredibly disappointing as the "front-end" components wer
 
 ## Where next then?
 
-Rather than end on a downer, I'm going to start kicking up a fuss once again. (Martin Owen)[https://twitter.com/meadicus] recently brought a Pi back from the (API Conference)[http://www.apistrategyconference.com/2014Amsterdam/] held in Amsterdam, which has rekindled my interest in such a device. This coupled with some desires for some general ongoing statistics means I'm going to once again grabble with obtaining data from our systems, and representing 
+Rather than end on a downer, I'm going to start kicking up a fuss once again. [Martin Owen](https://twitter.com/meadicus) recently brought a Pi back from the [API Conference](http://www.apistrategyconference.com/2014Amsterdam/) held in Amsterdam, which has rekindled my interest in such a device. This coupled with some desires for some general ongoing statistics means I'm going to once again grabble with obtaining data from our systems, and representing 
 back to the teams. So to start things off, heres my short list of stuff to start monitoring, recording, and presenting:
 
 * Jenkins builds per hour
@@ -68,9 +67,9 @@ back to the teams. So to start things off, heres my short list of stuff to start
 And	because I'm still an experimenter at heart, and it may be another post:
 
 * Cups of tea brewed today
-    * Set of scales - (WH-B05)[http://www.amazon.com/WH-B05-Portable-Electronic-Digital-Kitchen/dp/B00B191BSE]
-	* Some (MSP430)[http://www.ti.com/lsds/ti/microcontroller/16-bit_msp430/overview.page} chips
-	* A couple of (Nordic RF transceivers)[https://www.nordicsemi.com/kor/node_176/2.4GHz-RF/nRF24L01P]
-	* Some (imagination)[http://sites.psu.edu/reshmajblog/wp-content/uploads/sites/885/2013/04/spongebob-imagination.jpg]
+    * Set of scales - [WH-B05](http://www.amazon.com/WH-B05-Portable-Electronic-Digital-Kitchen/dp/B00B191BSE)
+	* Some [MSP430](http://www.ti.com/lsds/ti/microcontroller/16-bit_msp430/overview.page) chips
+	* A couple of [Nordic RF transceivers](https://www.nordicsemi.com/kor/node_176/2.4GHz-RF/nRF24L01P)
+	* Some [imagination](http://sites.psu.edu/reshmajblog/wp-content/uploads/sites/885/2013/04/spongebob-imagination.jpg)
 	
 Wish me luck...

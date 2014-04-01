@@ -11,7 +11,7 @@ image:
 One of my passions is to support the people around me to achieve the best they can. Be that by simply providing a listening post to help answer questions in the form of [Rubber Ducking](http://en.wikipedia.org/wiki/Rubber_duck_debugging), supporting tools that help developers build and validate code, through to providing "inspiration" for new ways of working.
 
 I've always been very interested in presenting information to users in innovative new ways, or perhaps finding innovative new data from the noise. An example of this was undertaken during
- a hackathon at PayPoint.net using a Raspberry Pi and an instance of (Dashing)[http://shopify.github.io/dashing/] to generate a wallboard for the team as a whole.
+ a hackathon at PayPoint.net using a Raspberry Pi and an instance of [Dashing](http://shopify.github.io/dashing/) to generate a wallboard for the team as a whole.
  
 # Retrospective
 

@@ -33,6 +33,8 @@ I found that one of the most fascinating aspects of my experimenting was reviewi
 to commemorate my progress through the 24 hours. This was fabulous documentary evidence when it came to presenting my activities to the rest of the team as it allowed me to present my thinking, the evolution of the delivery and
 gave some meaning to the eventual delivery. I think it also helped demonstrate the work involved in creating elegant, minimalistic designs for customers.
 
+![DashboardsOnTheMove](/images/Dashboard_screenshot_progression.gif)
+
 > Moral: Look to where you have been to see where you may go next
 
 ## Release Soon, Release Often

@@ -11,7 +11,9 @@ image:
 ---
 
 <div style="float: right">
-![Tobys Face](/images/avatar.jpg)
+
+	![Tobys Face](/images/avatar.jpg)
+
 </div>
 
 Hi!

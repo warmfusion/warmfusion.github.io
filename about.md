@@ -2,15 +2,12 @@
 layout: page
 permalink: /about/
 title: About Toby
-tags: [about]
 modified: 2014-08-31
 image:
   feature: pulteney_bridge.jpg
   credit: Jürgen Matern
   creditlink: http://commons.wikimedia.org/wiki/User:J%C3%BCrgenMatern
 ---
-
-<div style="float: right"><img alt="Tobys Face" src="/images/avatar.jpg" /></div>
 
 Hi!
 

@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: page
 title:  "Warmfusion Reborn"
 date:   2014-03-17 20:48:00
-categories: 
+tags: hobbies
 share: true
 comments: true
 ---

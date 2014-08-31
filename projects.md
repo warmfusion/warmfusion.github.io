@@ -2,7 +2,7 @@
 layout: page
 permalink: /projects/
 title: My Projects
-tags: [hobby]
+tags: [hobbies]
 modified: 2014-03-22
 ---
 

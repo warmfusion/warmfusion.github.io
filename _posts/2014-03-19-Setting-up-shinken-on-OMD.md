@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: page
 title:  "Setting up Shinken on OMD"
-categories: monitoring shinken nagios
+tags: monitoring
 share: true
 comments: true
 ---

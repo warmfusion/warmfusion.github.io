@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: page
 title:  "Bringing the dashboards"
-categories: dashboard hackathon retrospective
+tags: dashboard hackathon retrospective
 share: true
 comments: true
 image:

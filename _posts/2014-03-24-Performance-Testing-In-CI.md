@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: page
 title:  "Performance Testing in CI"
-categories: performance testing continous-integration stub
+tags: performance testing continous-integration stub
 share: true
 comments: true
 ---

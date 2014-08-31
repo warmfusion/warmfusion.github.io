@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: page
 title:  "Building The Internet"
-categories: msp430 hobbies 
+tags: msp430 hobbies 
 share: true
 comments: true
 ---

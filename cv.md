@@ -2,7 +2,6 @@
 layout: page
 permalink: /cv/
 title: Toby Jackson
-tags: [cv]
 modified: 2014-08-31
 ---
 
@@ -53,4 +52,4 @@ Implemented new tools and practices including emulation tools, mavenised build a
 
 Quickly got up to speed with commercial high-volume, high-impact development and systems operation. Worked with other developers to migrate legacy code base into version control (From CVS/Folders into SVN) as well as bringing Hudson (Now Jenkins) into the development pipeline.
 
-Worked with our operations team on migration of datacenter with zero-downtime from US to new servers in the UK by implementing software load balancing and routing tools, monitoring and validation systems and installation and configuration of new services. 
+Worked with our operations team on migration of datacenter with zero-downtime from US to new servers in the UK by implementing software load balancing and routing tools, monitoring and validation systems and installation and configuration of new services.

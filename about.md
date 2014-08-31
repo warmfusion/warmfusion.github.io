@@ -14,7 +14,7 @@ Hi!
 
 I'm Toby, and this is what I look like
 
-![images/avatar.jpg]
+![Tobys Face](images/avatar.jpg)
 
 I'm really glad you've found my site, I'm not the best writer in the world, and most of the time I wish I could just dictate my thoughts and let someone else do the writing, so I hope you'll forgive any typos, grammar or extraordinary abuse of the humble comma.
 
@@ -30,5 +30,5 @@ I'm a Software Engineer working for (PayPoint Mobile and Online)[https://www.pay
 
 Checkout  <a href="http://uk.linkedin.com/pub/toby-jackson/14/2a1/b7"><img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_profile_greytxt_80x15.png" width="80" height="15" border="0" alt="View Toby Jackson's profile on LinkedIn"></a> if you want to know more about my working life.
 
-Or on twitter... <a href="https://twitter.com/warmfusion" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @warmfusion</a>
+Or on twitter... <a href="https://twitter.com/warmfusion" class="twitter-follow-button" data-show-count="false" data-size="large">@warmfusion</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>

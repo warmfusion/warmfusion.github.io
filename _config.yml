@@ -35,6 +35,8 @@ bing_verify:
 links:
   - title: About
     url: /about/
+  - title: CV
+    url: /cv/
   - title: Articles
     url: /articles/
   - title: Projects
@@ -44,9 +46,10 @@ links:
 timezone:    Europe/London
 pygments:    true
 markdown:    kramdown
+pygments:    true
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title/
+permalink:   /:year-:month/:title/
 
 gems:
   - jemoji

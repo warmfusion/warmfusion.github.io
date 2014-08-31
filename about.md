@@ -12,7 +12,7 @@ image:
 
 <div style="float: right">
 
-	![Tobys Face](/images/avatar.jpg)
+	<img alt="Tobys Face" src="/images/avatar.jpg" />
 
 </div>
 

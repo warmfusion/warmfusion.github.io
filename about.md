@@ -14,7 +14,7 @@ Hi!
 
 I'm Toby, and this is what I look like
 
-![Tobys Face](images/avatar.jpg)
+![Tobys Face](/images/avatar.jpg)
 
 I'm really glad you've found my site, I'm not the best writer in the world, and most of the time I wish I could just dictate my thoughts and let someone else do the writing, so I hope you'll forgive any typos, grammar or extraordinary abuse of the humble comma.
 

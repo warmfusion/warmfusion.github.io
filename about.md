@@ -20,7 +20,7 @@ I'm Toby, and I'm really glad you've found my site, I'm not the best writer in t
 
 I'm a bit of a dabbler, a jack of all trades and master of *some*. I love finding out new things, learning little bits of this and that and discovering new ways of putting unexpected things together. 
 
-I live in the beautiful city of Bath (UK) with my fiancée in a house filled with exciting half finished (projects)[/projects/], books on every subject and and a rather messy garden.
+I live in the beautiful city of Bath (UK) with my fiancée in a house filled with exciting half finished [projects](/projects/), books on every subject and and a rather messy garden.
 
 # What I do
 
@@ -31,7 +31,7 @@ I've just started spending time with [bath hacked](http://www.bathhacked.org/) c
 I'm also on Twitter... <a href="https://twitter.com/warmfusion" class="twitter-follow-button" data-show-count="false" data-dnt="true"></a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> 
 
-I love playing with electronics (projects)[/projects/], and whilst I have a problem finishing any before I get interested in something new, I've always got something interesting on the go.
+I love playing with electronics [projects](/projects/), and whilst I have a problem finishing any before I get interested in something new, I've always got something interesting on the go.
 
 ## Working Life
 

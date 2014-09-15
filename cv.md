@@ -18,13 +18,14 @@ I am the recognised lead on our development and testing infrastructure, consisti
 A certified scrum master, I have previously worked with five concurrent scrum teams across strategic and tactical projects, providing support and direction on developmental practices and provision of technologies to enable smoother delivery.
 
 
-# EDUCATION AND SKILLS
+# EDUCATION
 
 * Certified ScrumMaster March 2012
     * Accredited by Scrum Alliance
 * 2.1 BSc (Hons) Degree in Computer Science - 2003-2006
     * School of Computer Science, Cardiff University, Cardiff
 
+## SKILLS
 
 * Linux System Administration 
     * RedHat Enterprise Linux (RHEL) - v5+

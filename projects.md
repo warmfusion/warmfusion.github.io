@@ -71,6 +71,10 @@ These are project ideas which havn't quite gotten off the ground in any substant
 - Cross-Stitch desk ornamanent
 	- Create something nice for my desk using cross stitch to convert some Pixel art into a physical object
 	- ? As the material is quite thin, i wonder what a few white LEDs would look like behind key points - accenting elements such as eyes ?
+- Herding Cats
+        - A robot, or pair, which tries to locate an object or point by asking a user (or other robot) if hes cold, warm, hot or found it
+        - A simple html page could present the four options and the robot then has to trianulate its position and where it suspects the object is
+
 
 ## Big Project Ideas
 
@@ -85,5 +89,5 @@ The use of phosphoresent paper rather than simply leaving laser trails was consi
 
 ### Monster Clock
 
-Basically replicate the (Spark Fun)[http://www.sparkfun.com/] - (12 foot clock)[https://www.sparkfun.com/tutorials/47)
+Basically replicate the [Spark Fun](http://www.sparkfun.com/) - [12 foot clock](https://www.sparkfun.com/tutorials/47)
 

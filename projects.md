@@ -39,6 +39,17 @@ The concept is to have a set of battery powered cubes placed around in any parti
 - Current plan to use MSP430s combined with some nrf2401 transceivers
 - Likely use a Raspberry Pi as central controller as the additional power would allow for easier management of the light cluster
 
+### EL Tape
+
+Using some EL Wire Tape create a set of 7 segment display components and use them to create a large scale digital wall mounted clock.
+
+Similar to the GPS clock described below, but by using el wire theres far less hassle with heat and light disipation and should result in a much thinner display.
+
+Possible complications with power as EL Wire requires a more complex high voltage AC based supply, but this should be resolvable.
+
+### EL Nixie Tube
+
+Using EL wire create a Nixie Tube which doesn't need *quite* as much complicated setup. Maybe.
 
 ### Wheres Toby
 

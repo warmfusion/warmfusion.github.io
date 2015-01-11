@@ -4,7 +4,7 @@ title: EL Wire Clock
 summary: Digital clockface using EL wire
 permalink: /projects/elclock/
 icons: 
-  - clock-o
+  - time
 --- 
 
 Using some EL Wire Tape create a set of 7 segment display components and use them to create a large scale digital wall mounted clock.

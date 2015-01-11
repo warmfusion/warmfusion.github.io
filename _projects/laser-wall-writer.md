@@ -4,7 +4,7 @@ title: UV Laser Phosphoresent Painter
 summary: Writing on the walls with lasers
 permalink: /projects/laserwriter/
 icons: 
-  - building-o
+  - building
 ---
 
 We had a large blank wall in the PayPoint office which I wanted to do something interesting with. One idea was to use sheets of phosphoresent paper to coat a large area of this space, then to use a computer controlled laser pointer to "draw" pictures which would fade over time. This would allow for the fact that this wall is high up (10 feet from the bottom) and would make for a display that could be changing over time.

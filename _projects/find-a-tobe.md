@@ -4,7 +4,7 @@ title: Find-A-Tobe
 summary: Device for showing Tobys rough location via a clock-face
 permalink: /projects/find-a-tobe/
 icons: 
-  - clock-o
+  - time
   - map-marker
 ---
 

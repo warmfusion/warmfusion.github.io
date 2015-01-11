@@ -4,7 +4,7 @@ title: Jenk-O-Meter
 summary: Physical guage for showing overall Jenkins health
 permalink: /projects/jenkometer/
 icons: 
-  - tachometer
+  - dashboard
 ---
 
 - [Jenk-O-Meter](https://github.com/warmfusion/jenk-o-meter)

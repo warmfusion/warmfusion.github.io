@@ -9,11 +9,11 @@ Here is a list of projects I'm working on in my spare time, they're in a variety
 
 <ul class="post-list">
 {% for project in site.projects %} 
-  <li><article><a href="{{ site.url }}{{ project.url }}">{{ project.title }} </a>
+  <li><article><a href="{{ site.url }}{{ project.url }}">{{ project.title }}
   {% if project.icons %}
-  <span style='float:right'>{% for icon in project.icons %} <i class="fa fa-{{ icon }}"></i>  {% endfor %}</span>
+  <span style='float:right'>{% for icon in project.icons %} <i class="icon-{{ icon }}"></i>  {% endfor %}</span>
   {% endif %}
-  <footer>{{ project.summary }}</footer></article> </li>
+  <footer>{{ project.summary }}</footer></a></article> </li>
 {% endfor %}
 </ul>
 

@@ -4,7 +4,7 @@ title: Shelf Clock
 summary: Twelve coloured boxes showing time through colour
 permalink: /projects/shelfclock/
 icons: 
-  - clock-o
+  - time
 ---
 
 # Shelf Clock

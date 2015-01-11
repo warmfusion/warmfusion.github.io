@@ -5,7 +5,7 @@ description: "A simple blog of things by Toby Jackson"
 ---
 
 Welcome to my little corner of the internet, I occasionally decide to write a little article or two, or use it to
- keep track of my [projects](Projects/).
+ keep track of my [projects](projects/).
 
 # My Articles
 

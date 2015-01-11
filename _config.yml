@@ -50,5 +50,7 @@ highlighter: true
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink:   /:year-:month/:title/
 
-gems:
-  - jekyll-mentions
+
+collections:
+  projects:
+    output: true

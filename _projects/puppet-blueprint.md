@@ -10,10 +10,10 @@ icons:
 ---
 
 
-Many larger organisations use configuration managers such as (Puppet)[http://puppetlabs.com/] and (Chef)[https://www.chef.io/chef/] to orchestrate their server environment from code, allowing for many tens, hundreds and even thousands of servers to be managed by only a handful of engineers.
+Many larger organisations use configuration managers such as [Puppet](http://puppetlabs.com/) and [Chef](https://www.chef.io/chef/) to orchestrate their server environment from code, allowing for many tens, hundreds and even thousands of servers to be managed by only a handful of engineers.
 
 
-# Scale Vs (Cognitive Load)[http://en.wikipedia.org/wiki/Cognitive_load]
+# Scale Vs [Cognitive Load](http://en.wikipedia.org/wiki/Cognitive_load)
 
 As increasing number of servers are provisioned by fewer numbers of staff, it becomes ever harder to understand how these servers actually fit into the bigger picture. While a given machine can be inspected for the services it runs, eg HAProxy, Tomcat, Postgresql and so forth, it is less apparent how those services are used to deliver value to the team, nor how they fit in the dependency tree of larger service oriented platforms.
 
@@ -44,13 +44,13 @@ The questions I'd like to be able answer are
 3. What is the impact of restarting <Hardware Z>
 4. How is <Switch A> involved in delivering content for <Product X>?
 
-I'm specifically not going to try and answer questions that can be solved by existing tools like (Foreman)[theforeman.org/learn_more.html] or (Puppet Explorer)[https://github.com/spotify/puppetexplorer] which are capable of returning the state of machines, but not necessarily their relationships to other parts of your system.
+I'm specifically not going to try and answer questions that can be solved by existing tools like [Foreman](theforeman.org/learn_more.html) or [Puppet Explorer](https://github.com/spotify/puppetexplorer) which are capable of returning the state of machines, but not necessarily their relationships to other parts of your system.
 
 
 ## Initial concept
 
-* Use (PuppetDB)[https://docs.puppetlabs.com/puppetdb/latest/] to provide access to core Puppet state 
-* Using (Exported Resources)[https://docs.puppetlabs.com/puppet/latest/reference/lang_exported.html] also expand upon relationships between services
+* Use [PuppetDB](https://docs.puppetlabs.com/puppetdb/latest/) to provide access to core Puppet state 
+* Using [Exported Resources](https://docs.puppetlabs.com/puppet/latest/reference/lang_exported.html) also expand upon relationships between services
     * VM Hosts indicate the guests they're running
     * Guests announce the services they deliver
     * Services announce their dependencies on other systems and the product they're delivering

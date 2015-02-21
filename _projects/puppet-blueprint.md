@@ -124,6 +124,7 @@ var links = [
 
 
 
+
 ];
 
 var nodes = {};
@@ -152,7 +153,7 @@ var svg = d3.select("#example-graph").append("svg")
 
 // Per-type markers, as they don't inherit styles.
 svg.append("defs").selectAll("marker")
-    .data(["suit", "licensing", "resolved"])
+    .data(["balance", "replication", "datastore"])
   .enter().append("marker")
     .attr("id", function(d) { return d; })
     .attr("viewBox", "0 -5 10 10")
@@ -181,6 +182,7 @@ var text = svg.append("g").selectAll("text")
   .enter().append("text")
     .attr("x", 8)
     .attr("y", ".31em")
+    .style("fill", function(d) { return color(d.type); })
     .text(function(d) { return d.name; });
 
 // Use elliptical arc path segments to doubly-encode directionality.

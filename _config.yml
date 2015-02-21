@@ -45,7 +45,7 @@ links:
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Europe/London
 markdown:    kramdown
-highlighter: true
+highlighter: pygments
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink:   /:year-:month/:title/

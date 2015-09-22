@@ -13,16 +13,16 @@ comments: true
 There are plenty of resources online that explain what IPv6 is, and why it was created, but for my particular
 use case there are a few simple reasons I wanted to setup an IPv6 network in my LAN.
 
-    1. Learning experience
-        * It's inevitable that IPv6 will become used more and more frequently in my professional work and
-          if I want to remain relevant it makes sense to experiment with this technology sooner rather than
-          later
-    2. Internet of Things (IoT)
-        * As I create or purchase more and more network enabled devices I'm using IP addresses at home but
-        I can't make them publically accessible - IPv6 lets me trivially access these devices publically
-    3. Docker
-        * Like (1) combined with (2), it lets me explore allocating IPv6 addresses to docker containers and
-        setup more complex network stacks without having to use subnet tricks
+1. Learning experience
+    * It's inevitable that IPv6 will become used more and more frequently in my professional work and
+      if I want to remain relevant it makes sense to experiment with this technology sooner rather than
+      later
+2. Internet of Things (IoT)
+    * As I create or purchase more and more network enabled devices I'm using IP addresses at home but
+    I can't make them publically accessible - IPv6 lets me trivially access these devices publically
+3. Docker
+    * Like (1) combined with (2), it lets me explore allocating IPv6 addresses to docker containers and
+    setup more complex network stacks without having to use subnet tricks
 
 # Equipment
 
@@ -50,25 +50,22 @@ The IPv6 configuration is stored on your router using a local filesystem that sh
 To do this, you need to enable the [JFFS2](http://www.dd-wrt.com/wiki/index.php/Journalling_Flash_File_System) 
 which can be a little fiddly:
 
->>>
-Directions for (normal) users: using Web-GUI Interface
-
-The steps to enable JFFS through the router web page are very specific. To avoid having to reset and reprogram your router, it's smart to make a backup here of your settings. If you follow these steps exactly, it should not lock up.
-
-1. On the router web page click on Administration.
-2. Scroll down until you see JFFS2 Support section.
-3. Click Enable JFFS.
-4. Click Save.
-5. Wait couple seconds, then click Apply.
-6. Wait again. Go back to the Enable JFFS section, and enable Clean JFFS.
-7. Do not click "Save". Click Apply instead.
-
-The router then formats the available space.
-
-8. Wait till you get the web-GUI back, then disable "Clean JFFS" again.
-9. Click "Save".
-10. It may be wise to Reboot the router, just to make sure
->>>
+>
+> Directions for (normal) users: using Web-GUI Interface
+> 
+> The steps to enable JFFS through the router web page are very specific. To avoid having to reset and reprogram your router, it's smart to make a backup here of your settings. If you follow these steps exactly, it should not lock up.
+> 
+> 1. On the router web page click on Administration.
+> 2. Scroll down until you see JFFS2 Support section.
+> 3. Click Enable JFFS.
+> 4. Click Save.
+> 5. Wait couple seconds, then click Apply.
+> 6. Wait again. Go back to the Enable JFFS section, and enable Clean JFFS.
+> 7. Do not click "Save". Click Apply instead. 
+>     * The router then formats the available space.
+> 8. Wait till you get the web-GUI back, then disable "Clean JFFS" again.
+> 9. Click "Save".
+> 10. It may be wise to Reboot the router, just to make sure
 
 ## Step 3 - Install ip6tables
 

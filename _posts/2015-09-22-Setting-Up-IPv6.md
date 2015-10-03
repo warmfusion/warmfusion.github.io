@@ -1,15 +1,17 @@
 ---
 layout: page
 title:  "IPv6 on my network"
-tags:  
+tags: technical network
 share: true
 comments: true
 ---
 
-## Whats IPv6?
+# Whats IPv6?
 
-There are plenty of resources online that explain what IPv6 is, and why it was created, but for my particular
-use case there are a few simple reasons I wanted to setup an IPv6 network in my LAN.
+IPv6 is a 'new' method of identifying devices uniquely on the internet which amongst other useful features
+allows for a considerably larger number of machines to be connected at once. You can find plenty of information
+about IPv6 on the internet, so rather than trying to repeat other peoples work I'll just explain my motivations
+for my experimentation and assume you have some moderate level of technical ability.
 
 1. Learning experience
     * It's inevitable that IPv6 will become used more and more frequently in my professional work and

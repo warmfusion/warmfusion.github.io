@@ -48,7 +48,7 @@ going to assume some level of technical ability.
 Navigate to `Administration >> Management` and enable IPv6 and Radvd.
 
 In the Radvd configuration section, add the following config block and ensure you update the
-`<REMOTEIP>` with your IPv6 prefix that was just created. For example, `2001:db8:0::` (No /64)
+`<REMOTEIP>` with your IPv6 prefix that was just created. For example, `2001:db8:0::/64` 
 
 
     interface br0 {

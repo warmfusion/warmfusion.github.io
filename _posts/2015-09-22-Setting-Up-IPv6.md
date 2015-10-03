@@ -6,8 +6,6 @@ share: true
 comments: true
 ---
 
-# IPv6 at Home
-
 ## Whats IPv6?
 
 There are plenty of resources online that explain what IPv6 is, and why it was created, but for my particular

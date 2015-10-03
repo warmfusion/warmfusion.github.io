@@ -92,4 +92,35 @@ The ASUS RT-N16 uses a Broadcom chip, so you could download pre-compiled modules
 
 Luckily, the DD-WRT community were able to help set this up, with a very simple [tutorial](http://www.dd-wrt.com/wiki/index.php/IPv6#Hurricane_Electric.27s_Tunnelbroker.net)
 
-... TBC
+Using the tutorial above, and some tinkering, I was able to get my IPv6 configuration working using the following
+simple set of commands:
+
+    SERVER_IP4=<TunnelBroker Server IPv4 Address>
+    CLIENT_IP4=<Your Public IPv4>
+
+    REMOTE_IP6=<TunnelBroker Server IPv6 Address> # Eg 2001:db8:0:1/64
+    CLIENT_IP6=<TunnelBroker Client IPv6 Address> # Eg 2001:db8:0:2/64
+
+
+    #Ensure IPv6 modules are loaded
+    insmod ipv6
+    # Create a IPv6 over IPv4 tunnel
+    ip tunnel add he-ipv6 mode sit remote ${SERVER_IP4} local ${CLIENT_IP4} ttl 255
+    ip link set he-ipv6 up
+
+    # Set our Remote IPv6 address on the tunnel device
+    ip addr add ${REMOTE_IP6} dev he-ipv6
+
+    # Transmit all IPv6 traffic through this tunnel
+    ip route add ::/0 dev he-ipv6
+
+    # Setup IPv6 on the Routers internal Bridge device
+    ip -6 addr add ${CLIENT_IP6} dev br0
+
+
+    # Truth be told - I have no idea why this is needed :-(
+    ROUTED_ADDRESS=`sed -n -e 's,^ *prefix *\([^ ]*\) *{,\1,p' /tmp/radvd.conf`
+    BR0_MAC=$(ifconfig br0 |sed -n -e 's,.*HWaddr \(..\):\(..\):\(..\):\(..\):\(..\):\(..\).*,\1\2:\3\4:\5\6,p')
+    ip -6 addr add $(echo "$ROUTED_ADDRESS"|sed "s,::/..,::$BR0_MAC/64,") dev br0
+    ip -6 route add 2000::/3 dev he-ipv6
+

@@ -43,34 +43,32 @@ going to assume some level of technical ability.
 > If you select a broker location near home you should get excellent performance; but if you're feeling adventurous
 > it _may_ be possible to select an international broker endpoint and use your IPv6 traffic as a rudementary proxy
 
-## Step 2 - Enable JFFS2
+## Step 2 - Enable IPv6
 
-The IPv6 configuration is stored on your router using a local filesystem that should be persisted between reboots.
+Navigate to `Administration >> Management` and enable IPv6 and Radvd.
 
-To do this, you need to enable the [JFFS2](http://www.dd-wrt.com/wiki/index.php/Journalling_Flash_File_System) 
-which can be a little fiddly:
+In the Radvd configuration section, add the following config block and ensure you update the
+`<REMOTEIP>` with your IPv6 prefix that was just created. For example, `2001:db8:0::` (No /64)
 
->
-> Directions for (normal) users: using Web-GUI Interface
-> 
-> The steps to enable JFFS through the router web page are very specific. To avoid having to reset and reprogram your router, it's smart to make a backup here of your settings. If you follow these steps exactly, it should not lock up.
-> 
-> 1. On the router web page click on Administration.
-> 2. Scroll down until you see JFFS2 Support section.
-> 3. Click Enable JFFS.
-> 4. Click Save.
-> 5. Wait couple seconds, then click Apply.
-> 6. Wait again. Go back to the Enable JFFS section, and enable Clean JFFS.
-> 7. Do not click "Save". Click Apply instead. 
->     * The router then formats the available space.
-> 8. Wait till you get the web-GUI back, then disable "Clean JFFS" again.
-> 9. Click "Save".
-> 10. It may be wise to Reboot the router, just to make sure
+
+    interface br0 {
+      MinRtrAdvInterval 3;
+      MaxRtrAdvInterval 10;
+      AdvLinkMTU 1480;
+      AdvSendAdvert on;
+      prefix <REMOTEIP>::/64 {
+        AdvOnLink on;
+        AdvAutonomous on;
+        AdvValidLifetime 86400;
+        AdvPreferredLifetime 86400;
+        # Base6to4Interface vlan2;
+      };
+    };
 
 ## Step 3 - Install ip6tables
 
-> This step is incomplete
-
+> This step is incomplete - I've not worked out how to set this up, and that basically means
+> all my devices are currently exposed to the world-wild-web.
 
 If you want to protect all your IPv6 devices, which will be fully exposed to the internet when they get an IPv6 
 address, you will either need to run firewalls (or equivalent) on each of the clients, or install `ip6tables` on
@@ -123,4 +121,19 @@ simple set of commands:
     BR0_MAC=$(ifconfig br0 |sed -n -e 's,.*HWaddr \(..\):\(..\):\(..\):\(..\):\(..\):\(..\).*,\1\2:\3\4:\5\6,p')
     ip -6 addr add $(echo "$ROUTED_ADDRESS"|sed "s,::/..,::$BR0_MAC/64,") dev br0
     ip -6 route add 2000::/3 dev he-ipv6
+
+    # Let the router boot up, otherwise radvd doesn't work
+    sleep 5
+
+    # Start the Router Advertisement Daemon so machines on the LAN get some IPv6 loveliness
+    radvd -C /tmp/radvd.conf
+
+## Step 5 - Persistence
+
+Goto `Administration >> Commands` and copy/paste the script above, changing the configuration variables
+as required, and save as `startup`.
+
+Reboot the router, and everything _should_ just work.
+
+
 

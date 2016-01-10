@@ -23,6 +23,7 @@ owner:
   stackexchange:  536604/toby-jackson
   # For Google Authorship https://plus.google.com/authorship
   google_plus:    https://plus.google.com/+TobyJackson
+  pgp:            3C2EC18B.asc
 
 # Analytics and webmaster tools stuff goes here
 google_analytics:  UA-49561921-1

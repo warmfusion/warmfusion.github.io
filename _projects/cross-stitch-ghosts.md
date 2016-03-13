@@ -9,7 +9,7 @@ icons:
 
 # Cross Stitch Ghosts
 
-![Ghosts](/images/x-stitch-ghosts.jpg)
+![Ghosts](/images/xstitch-ghosts.jpg)
 
 I was inspired to create this when watching Lindsay create some cross-stitch a few years ago, and fancied making something nice for myself.
 
@@ -26,13 +26,13 @@ I created the design using [KXStitch](https://userbase.kde.org/KXStitch) but unf
 
 This was the first Hello typeface I tried out, but it didn't seem in-keeping with the 8-bit style, but you can see the ghosts underneath taking shape.
 
-![Hello Prototype with ghosts](images/xstitch-hello-prototype1.png)
+![Hello Prototype with ghosts](/images/xstitch-hello-prototype1.png)
 
 ### The Hello
 
 This was another attempt at a suitable typeface, and the one I finally settled on. You can see the edge of other speech bubbles that held now lost designs.
 
-![Hello Prototype](images/xstitch-hello-prototype2.png)
+![Hello Prototype](/images/xstitch-hello-prototype2.png)
 
 ## Framing
 

@@ -1,13 +1,11 @@
 ---
 layout: page
-title: CrossStitch Desk Picture
+title: CrossStitch Ghosts
 summary: A simple cross-stitch decoration for my office desk
 permalink: /projects/x-stitch-ghosts/
 icons:
   - gamepad
 ---
-
-# Cross Stitch Ghosts
 
 ![Ghosts](/images/xstitch-ghosts.jpg)
 

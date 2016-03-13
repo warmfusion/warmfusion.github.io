@@ -15,7 +15,7 @@ owner:
   email:          toby.jackson@warmfusion.co.uk
   # Social networking links used in footer. Update and remove as you like.
   twitter:        warmfusion
-  facebook:       
+  facebook:
   github:         warmfusion
   linkedin:       toby-jackson/14/2a1/b7
   instagram:
@@ -46,7 +46,7 @@ links:
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Europe/London
 markdown:    kramdown
-highlighter: pygments
+highlighter: rouge
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink:   /:year-:month/:title/

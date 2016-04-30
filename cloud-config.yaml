@@ -1,0 +1,59 @@
+#cloud-config
+
+---
+
+# include one or more SSH public keys
+ssh_authorized_keys:
+  - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCy8xNHI82UuCSWa72GcoSXjYWoDk2B3rA7bVPzx87/i3VodRGh4EAd2gs6w2Mts3AgFtlXrRvcPQEQyE4HOCibrHQOh1IucXh+iMs8KQFXJ8yPYs0QJUZRdrM+cOfyIyOhaiSjZCgACKW851HUzCUZt9KXWlWnNUcpnbFY43uhxJ7Q1urM/Qp8gO9clhFd7UDJCHSQXiImrIGCtuh7IENLWqrlH+Fgafb+3S6u/5CYU8+XtV9SD4fzHOn7vXSMk5nSCpFKIhscGMj1zHquZcKqv38cO8ZbmVn5LUMsDkSEXg2XET4ZH03Zl6TR3wpIexHtIzjxctLvKVG6jvwaz303 toby@Tobys-MacBook-Pro.local
+
+hostname: "coreos1"
+
+
+coreos:
+  etcd2:
+    discovery: https://discovery.etcd.io/12187f08efc7a1f983f9143e66e124d1
+    advertise-client-urls: http://$public_ipv4:2379
+    initial-advertise-peer-urls: http://$private_ipv4:2380
+    listen-client-urls: http://0.0.0.0:2379,http://0.0.0.0:4001
+    listen-peer-urls: http://$private_ipv4:2380,http://$private_ipv4:7001
+  fleet:
+    public-ip: $public_ipv4
+  flannel:
+    interface: $public_ipv4
+  update:
+    reboot-strategy: reboot
+  units:
+  - name: etcd2.service
+    command: start
+  - name: fleet.service
+    command: start
+  - name: format-ephemeral.service
+    command: start
+    content: |
+      [Unit]
+      Description=Formats the ephemeral drive
+      After=dev-xvdb.device
+      Requires=dev-xvdb.device
+      [Service]
+      Type=oneshot
+      RemainAfterExit=yes
+      ExecStart=/usr/sbin/wipefs -f /dev/xvdb
+      ExecStart=/usr/sbin/mkfs.ext4 -F /dev/xvdb
+  - name: var-lib-docker.mount
+    command: start
+    content: |
+      [Unit]
+      Description=Mount ephemeral to /var/lib/docker
+      Requires=format-ephemeral.service
+      After=format-ephemeral.service
+      [Mount]
+      What=/dev/xvdb
+      Where=/var/lib/docker
+      Type=ext4
+  - name: docker.service
+    drop-ins:
+      - name: 10-wait-docker.conf
+        content: |
+          [Unit]
+          After=var-lib-docker.mount
+          Requires=var-lib-docker.mount

@@ -6,16 +6,10 @@
 ssh_authorized_keys:
   - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCy8xNHI82UuCSWa72GcoSXjYWoDk2B3rA7bVPzx87/i3VodRGh4EAd2gs6w2Mts3AgFtlXrRvcPQEQyE4HOCibrHQOh1IucXh+iMs8KQFXJ8yPYs0QJUZRdrM+cOfyIyOhaiSjZCgACKW851HUzCUZt9KXWlWnNUcpnbFY43uhxJ7Q1urM/Qp8gO9clhFd7UDJCHSQXiImrIGCtuh7IENLWqrlH+Fgafb+3S6u/5CYU8+XtV9SD4fzHOn7vXSMk5nSCpFKIhscGMj1zHquZcKqv38cO8ZbmVn5LUMsDkSEXg2XET4ZH03Zl6TR3wpIexHtIzjxctLvKVG6jvwaz303 toby@Tobys-MacBook-Pro.local
 
-hostname: "coreos2"
+# hostname: "coreos1"
 
 
 coreos:
-  etcd2:
-    discovery: https://discovery.etcd.io/12187f08efc7a1f983f9143e66e124d1
-    advertise-client-urls: http://$public_ipv4:2379
-    initial-advertise-peer-urls: http://$private_ipv4:2380
-    listen-client-urls: http://0.0.0.0:2379,http://0.0.0.0:4001
-    listen-peer-urls: http://$private_ipv4:2380,http://$private_ipv4:7001
   fleet:
     public-ip: $public_ipv4
   flannel:
@@ -23,8 +17,30 @@ coreos:
   update:
     reboot-strategy: reboot
   units:
-  - name: etcd2.service
+  - name: etcd-env-generator.service
     command: start
+    content: |
+      [Unit]
+      Description=Creates an EnvironmentFile with etcd2 setup on private network to be injected into etcd2 service
+      Documentation=https://github.com/pavlo/coreos-utils/etcd-env-generator
+      Requires=network.target
+      After=network.target
+      [Service]
+      ExecStartPre=-/usr/bin/mkdir -p /opt/bin
+      ExecStartPre=/usr/bin/wget -N -P /opt/bin https://raw.githubusercontent.com/pavlo/coreos-utils/master/etcd-env-generator/etcd-env-generator.sh
+      ExecStartPre=/usr/bin/chmod +x /opt/bin/etcd-env-generator.sh
+      ExecStart=/opt/bin/etcd-env-generator.sh eth0 12187f08efc7a1f983f9143e66e124d1
+      RemainAfterExit=yes
+      Type=oneshot
+  - name: etcd2.service
+    drop-ins:
+    - name: "urls.conf"
+      content: |
+        [Unit]
+        Requires=etcd-env-generator.service
+        After=etcd-env-generator.service
+        [Service]
+        EnvironmentFile=/etc/etcd2-environment
   - name: fleet.service
     command: start
   - name: format-ephemeral.service

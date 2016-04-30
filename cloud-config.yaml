@@ -6,7 +6,7 @@
 ssh_authorized_keys:
   - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCy8xNHI82UuCSWa72GcoSXjYWoDk2B3rA7bVPzx87/i3VodRGh4EAd2gs6w2Mts3AgFtlXrRvcPQEQyE4HOCibrHQOh1IucXh+iMs8KQFXJ8yPYs0QJUZRdrM+cOfyIyOhaiSjZCgACKW851HUzCUZt9KXWlWnNUcpnbFY43uhxJ7Q1urM/Qp8gO9clhFd7UDJCHSQXiImrIGCtuh7IENLWqrlH+Fgafb+3S6u/5CYU8+XtV9SD4fzHOn7vXSMk5nSCpFKIhscGMj1zHquZcKqv38cO8ZbmVn5LUMsDkSEXg2XET4ZH03Zl6TR3wpIexHtIzjxctLvKVG6jvwaz303 toby@Tobys-MacBook-Pro.local
 
-hostname: "coreos1"
+hostname: "coreos2"
 
 
 coreos:

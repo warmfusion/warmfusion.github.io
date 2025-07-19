@@ -14,15 +14,8 @@ owner:
   avatar:         avatar.jpg
   email:          toby.jackson@warmfusion.co.uk
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        warmfusion
-  facebook:
   github:         warmfusion
   linkedin:       toby-jackson/14/2a1/b7
-  instagram:
-  tumblr:
-  stackexchange:  536604/toby-jackson
-  # For Google Authorship https://plus.google.com/authorship
-  google_plus:    https://plus.google.com/+TobyJackson
   gpg:            3C2EC18B.asc
 
 # Analytics and webmaster tools stuff goes here
